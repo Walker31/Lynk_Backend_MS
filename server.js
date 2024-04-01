@@ -76,6 +76,10 @@ app.post('/login', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => { 
+    res.send('Hello, Azure! This is a Node.js application.'); 
+  }); 
+
 app.get('/messages', async (req, res) => {
     console.log("in the messages");
     try {
